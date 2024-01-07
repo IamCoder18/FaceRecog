@@ -3,7 +3,7 @@ Object.entries(exports).forEach(([name, exported]) => window[name] = exported);
 
 async function face() {
 
-    const MODEL_URL = '/models'
+    const MODEL_URL = './models'
 
     await faceapi.loadSsdMobilenetv1Model(MODEL_URL)
     await faceapi.loadFaceLandmarkModel(MODEL_URL)
