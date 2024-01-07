@@ -11,7 +11,7 @@ async function face() {
     await faceapi.loadFaceExpressionModel(MODEL_URL)
 
     const video = document.querySelector("#video")
-    const labels = ['aarav']
+    const labels = ['aarav', 'papa']
     const labeledFaceDescriptors = await Promise.all(
         labels.map(async label => {
 
@@ -30,8 +30,8 @@ async function face() {
     );
 
     const threshold = 0.6
-
-    setInterval(async () => {
+    
+    document.addEventListener('keypress', async () => {
         let faceDescriptions = await faceapi.detectAllFaces(video).withFaceLandmarks().withFaceDescriptors()
         console.log(faceDescriptions)
 
@@ -52,9 +52,7 @@ async function face() {
                 document.querySelector("body").style.backgroundColor = "black"
             }
         })
-    }, 1000)
-
-
+    })
 }
 
 setInterval(() => {
