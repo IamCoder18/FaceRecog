@@ -1,0 +1,18 @@
+{
+  "name": "face-recog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "2.11.2",
+    "express": "4.18.2",
+    "face-api.js": "0.22.2",
+    "sib-api-v3-sdk": "8.5.0"
+  }
+}
