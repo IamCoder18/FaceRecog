@@ -28,7 +28,7 @@ app.use("/faces", express.static(__dirname));
 
 let defaultClient = ApiClient.instance
 let apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = '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';
+apiKey.apiKey = 'BREVOAPIKEY';
 let apiInstance = new TransactionalEmailsApi();
 let sendSmtpEmail = new SendSmtpEmail();
 
